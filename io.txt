@@ -1,0 +1,67 @@
+
+input/Output (I/O):
+
+Output:
+    print to console. print()
+    print to File -
+    print to log file. - use python logger functions instead of File I/O
+
+
+print(x)
+
+x - should be string convertible
+
+print(x + y + z)
+
+all x, y, z should be string convertible.
+
+Strings:
+    array of chars.
+    representation: '', "", """""", ''''''
+    triple quotes are used to preserve the space and line breaks in your string.
+
+    you can only add a string to another string.
+
+    in order to add any other object to a string, you need to perform type casting before concat.
+
+    type casting: str(object)
+
+greeting = Hello
+person = rajesh
+end_with = welcome
+
+Hello Rajesh. Welcome!!!
+
+print('{} {}, {}!!!'.format(greeting, person, end_with))
+print('{2} {1}, {0}!!!'.format(end_with, person, greeting))
+
+grtting_tuple = ('welcome', 'rjesh', 'Hello')
+
+print('{2} {1}, {0}!!!'.format(*grtting_tuple))
+print('{greeting} {person}, {end_with}!!!'.format(**data_dict))
+
+print('%s %s, %s!!!' % (greeting, person. end_with))
+print('%s %s, %s!!!' % grtting_tuple)
+
+def func1(a,b,c):
+100 params
+#func1(a,b,c)
+
+data_tuple = (a,b,c)
+func1(data_tuple[0], data_tuple[1], data_tuple[2])
+* - tuple, list, set
+** - dict, orderedDict.. etc
+func1(*data_tuple) == func1(data_tuple[0], data_tuple[1]......)
+
+
+print the below XXX:
+
+********
+ *******
+  ******
+   *****
+    ****
+     ***
+      **
+       *
+hints: you can multiply strings in python.

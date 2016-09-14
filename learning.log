@@ -1,0 +1,16 @@
+ERROR:root:I am an error
+DEBUG:root:I am here for debugging purposes
+INFO:root:I am logging some important info for you.
+CRITICAL:root:there is a critically wrong situation
+ERROR:root:I am an error
+CRITICAL:root:there is a critically wrong situation
+ERROR:root:I am an error
+CRITICAL:root:there is a critically wrong situation
+ERROR:root:I am an error
+CRITICAL:root:there is a critically wrong situation
+WARNING:root:there is a warning situation
+ERROR:root:I am an error
+DEBUG:root:I am here for debugging purposes
+INFO:root:I am logging some important info for you.
+CRITICAL:root:there is a critically wrong situation
+WARNING:root:there is a warning situation

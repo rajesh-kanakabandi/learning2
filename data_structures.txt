@@ -1,0 +1,13 @@
+data types:
+boolean - True, False
+number - int, float, double?
+string - list of chars
+datetime
+
+
+simple builtin data structures.
+
+list - [] Array - ordered, dupes OK
+set - Array, dupes NOK, un-ordered
+tuple - group of objects
+dictionary - map of key values
