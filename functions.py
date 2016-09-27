@@ -79,12 +79,6 @@ def even_odds(input_list):
 print(even_odds([1,2,3,4,5,6,7,8,9]))
 
 
-
-
-
-
-
-
 def celToFar(temp_in_cel):
     #temp_in_farenheit = (9*temp_in_cel + 160)/5
     temp_in_farenheit = (9*temp_in_cel/5) + 32
