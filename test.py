@@ -65,9 +65,10 @@ n-2
 """
 
 def sort_list(num_list):
-    for i in range(0,len(num_list)-2):
+    for i in range(0,len(num_list)-1):
+
         for j in range(i+1,len(num_list)-1):
-            if (num_list[i]>num_list[j]):
+            if (num_list[i]<num_list[j]):
                 num_list[i], num_list[j] = num_list[j], num_list[i]
     return num_list
 
@@ -82,12 +83,66 @@ write a function to sort a list in descending order.
 """
     write a functions to implement queue functions on a list.
     [1,2,3] -> insert 4 = [1,2,3,4]
-    [1,2,3] -> pop = [2,3,4] returns 1.
+    [1,2,3,4] -> pop = [2,3,4] returns 1. returns None if empty.
 
     research about global key word in python.
 
 """
-queue = []
-def insert(value):
+# queue = [1,2,3]
+# def insert(value):
+#
+# def pop():
 
-def pop():
+"""
+find the list of unique chars in a strings
+unique_chars(value)
+
+"Hello how are you"
+"""
+def unique_chars(value):
+    char_set = list(set(value))
+    if ' ' in char_set:
+        char_set.remove(' ')
+    return char_set
+
+print(unique_chars("hello how are you."))
+
+
+"""
+write a function to find the number of occurances of a character in a string.
+
+"Hello how are you"
+
+"""
+def num_of_occurence(value):
+    print(value)
+    char_set = unique_chars(value)
+    result = {}
+    for ele in char_set:
+        count = value.count(ele)
+        result[ele] = count
+    return result
+
+print(num_of_occurence("hello how are you."))
+
+"""
+return a list of suares of number from start to end.
+list_squares(start, end)
+"""
+def list_squares(start, end):
+    square_list = []
+    for i in range(start,end+1):
+        square_list.append(i*i)
+    return square_list
+
+print(list_squares(0,30))
+
+"""
+join_swap(string1, string2)
+
+"""
+def join_swap(string1, string2):
+    string2, string1 = string1[:2:] + string2[2::], string2[:2:] + string1[2::]
+    return string1 + ' ' + string2
+
+print(join_swap("abc","xyz"))
